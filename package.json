@@ -7,7 +7,7 @@
     "split-chunks",
     "chunks"
   ],
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Resolves and writes to output directory a file containing dependencies for entries",
   "main": "index.js",
   "scripts": {

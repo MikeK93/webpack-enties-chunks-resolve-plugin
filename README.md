@@ -13,7 +13,7 @@ The plugin will generate the file for each entry with the following content:
 
 #### one.txt
 ```
-vendors\~one\~three-6bcb772c264febce0b60.js
+vendors~one~three-6bcb772c264febce0b60.js
 one.js
 ```
 
@@ -24,7 +24,7 @@ two.js
 
 #### three.txt
 ```
-vendors\~one\~three-6bcb772c264febce0b60.js 
+vendors~one~three-6bcb772c264febce0b60.js 
 three.js
 ```
 

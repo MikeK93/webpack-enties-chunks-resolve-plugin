@@ -1,0 +1,18 @@
+{
+  "name": "webpack-enties-chunks-resolve-plugin",
+  "keywords": [
+    "webpack",
+    "entries",
+    "relationships",
+    "split-chunks",
+    "chunks"
+  ],
+  "version": "1.0.1",
+  "description": "Resolves and writes to output directory a file containing dependencies for entries",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --progress --config webpack.config.js"
+  },
+  "author": "Mykhailo Kozlov <mestremi6a@gmail.com>",
+  "license": "ISC"
+}

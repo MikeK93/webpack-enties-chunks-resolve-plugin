@@ -1,0 +1,106 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.10
+3 info using node@v6.12.3
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'F:\\MyApps\\webpack-enties-chunks-resolve-plugin',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\Mykhailo_Kozlov\AppData\Roaming\npm-cache\webpack-enties-chunks-resolve-plugin\1.0.4\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\Mykhailo_Kozlov\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle webpack-enties-chunks-resolve-plugin@1.0.4~prepublish: webpack-enties-chunks-resolve-plugin@1.0.4
+11 silly lifecycle webpack-enties-chunks-resolve-plugin@1.0.4~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ 'C:\\Users\\Mykhailo_Kozlov\\AppData\\Roaming\\npm-cache\\webpack-enties-chunks-resolve-plugin\\1.0.4\\package.tgz',
+12 verbose tar pack   'F:\\MyApps\\webpack-enties-chunks-resolve-plugin' ]
+13 verbose tarball C:\Users\Mykhailo_Kozlov\AppData\Roaming\npm-cache\webpack-enties-chunks-resolve-plugin\1.0.4\package.tgz
+14 verbose folder F:\MyApps\webpack-enties-chunks-resolve-plugin
+15 verbose addLocalTarball adding from inside cache C:\Users\Mykhailo_Kozlov\AppData\Roaming\npm-cache\webpack-enties-chunks-resolve-plugin\1.0.4\package.tgz
+16 verbose correctMkdir C:\Users\Mykhailo_Kozlov\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+17 silly cache afterAdd webpack-enties-chunks-resolve-plugin@1.0.4
+18 verbose afterAdd C:\Users\Mykhailo_Kozlov\AppData\Roaming\npm-cache\webpack-enties-chunks-resolve-plugin\1.0.4\package\package.json not in flight; writing
+19 verbose correctMkdir C:\Users\Mykhailo_Kozlov\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+20 verbose afterAdd C:\Users\Mykhailo_Kozlov\AppData\Roaming\npm-cache\webpack-enties-chunks-resolve-plugin\1.0.4\package\package.json written
+21 silly publish { name: 'webpack-enties-chunks-resolve-plugin',
+21 silly publish   keywords: [ 'webpack', 'entries', 'relationships', 'split-chunks', 'chunks' ],
+21 silly publish   version: '1.0.4',
+21 silly publish   description: 'Resolves and writes to output directory a file containing dependencies for entries',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { build: 'webpack --progress --config webpack.config.js' },
+21 silly publish   author: { name: 'Mykhailo Kozlov', email: 'mestremi6a@gmail.com' },
+21 silly publish   license: 'ISC',
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/MikeK93/webpack-enties-chunks-resolve-plugin.git' },
+21 silly publish   readme: '# webpack-enties-chunks-resolve-plugin\r\nResolves and writes to output directory a file containing dependencies for entries\r\n\r\n\r\nThe module helps with entries\' chunks dependencies resolving by creating the file per each entrypoint with all related chunks till the entry itself.\r\n\r\n\r\nHere is an example of the webpack console build output:\r\n![webpack console build output](https://github.com/MikeK93/webpack-enties-chunks-resolve-plugin/blob/master/images/webpack-console-output.png?raw=true)\r\n\r\n\r\nThe plugin will generate the file for each entry with the following content:\r\n\r\n#### one.txt\r\n```\r\nvendors~one~three-6bcb772c264febce0b60.js\r\none.js\r\n```\r\n\r\n#### two.txt\r\n```\r\ntwo.js\r\n```\r\n\r\n#### three.txt\r\n```\r\nvendors~one~three-6bcb772c264febce0b60.js \r\nthree.js\r\n```\r\n\r\n# Available parameters\r\nThere is an `options` parameter which has the following shape:\r\n\r\n#### fileNameTemplate\r\n```string```\r\n\r\nDefines the name of the resulting file which should contain `[entryname]` placeholder.\r\n\r\nDefault is `[entryname].txt`.\r\n\r\n#### generateWithScriptTags\r\n```boolean```\r\n\r\nIf `true` specified the resulting file will contain generated scrip tag with all files to be inserted in html.\r\nIf `false` the file will contain only files.\r\n\r\nDefault is `true`.\r\n\r\n#### scriptTagPathPrefix\r\n```string```\r\n\r\nDefines the script tag path prefix to which the file of a chunk/entry will be appended.\r\n\r\nDefault is empty string.\r\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'fd5827d9463281b095500557c70cac0b48a2b7b5',
+21 silly publish   bugs: { url: 'https://github.com/MikeK93/webpack-enties-chunks-resolve-plugin/issues' },
+21 silly publish   homepage: 'https://github.com/MikeK93/webpack-enties-chunks-resolve-plugin#readme',
+21 silly publish   _id: 'webpack-enties-chunks-resolve-plugin@1.0.4',
+21 silly publish   _shasum: '31792c3951ba290bd19b071b99232c7a532d1549',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name webpack-enties-chunks-resolve-plugin
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'webpack-enties-chunks-resolve-plugin',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'webpack-enties-chunks-resolve-plugin',
+26 silly mapToRegistry   name: 'webpack-enties-chunks-resolve-plugin',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/webpack-enties-chunks-resolve-plugin
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading C:\Users\Mykhailo_Kozlov\AppData\Roaming\npm-cache\webpack-enties-chunks-resolve-plugin\1.0.4\package.tgz
+30 verbose request uri https://registry.npmjs.org/webpack-enties-chunks-resolve-plugin
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 12:22:11 PM
+33 verbose request using bearer token for auth
+34 verbose request id f072d179bd4f3b53
+35 http request PUT https://registry.npmjs.org/webpack-enties-chunks-resolve-plugin
+36 http 403 https://registry.npmjs.org/webpack-enties-chunks-resolve-plugin
+37 verbose headers { date: 'Wed, 23 Jan 2019 10:22:12 GMT',
+37 verbose headers   'content-type': 'application/json',
+37 verbose headers   'transfer-encoding': 'chunked',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'set-cookie': [ '__cfduid=de7aa2fd995537b5fe97f4f89a024384b1548238931; expires=Thu, 23-Jan-20 10:22:11 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+37 verbose headers   'cf-ray': '49d989ab18628267-KBP',
+37 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+37 verbose headers   vary: 'Accept-Encoding',
+37 verbose headers   server: 'cloudflare',
+37 verbose headers   'content-encoding': 'gzip' }
+38 verbose request invalidating C:\Users\Mykhailo_Kozlov\AppData\Roaming\npm-cache\registry.npmjs.org\webpack-enties-chunks-resolve-plugin on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: You cannot publish over the previously published versions: 1.0.4. : webpack-enties-chunks-resolve-plugin
+40 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:290:14)
+40 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:216:7
+40 verbose stack     at Gunzip.onEnd (zlib.js:227:5)
+40 verbose stack     at emitNone (events.js:91:20)
+40 verbose stack     at Gunzip.emit (events.js:185:7)
+40 verbose stack     at endReadableNT (_stream_readable.js:974:12)
+40 verbose stack     at _combinedTickCallback (internal/process/next_tick.js:80:11)
+40 verbose stack     at process._tickCallback (internal/process/next_tick.js:104:9)
+41 verbose statusCode 403
+42 verbose pkgid webpack-enties-chunks-resolve-plugin
+43 verbose cwd F:\MyApps\webpack-enties-chunks-resolve-plugin
+44 error Windows_NT 10.0.17134
+45 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+46 error node v6.12.3
+47 error npm  v3.10.10
+48 error code E403
+49 error You cannot publish over the previously published versions: 1.0.4. : webpack-enties-chunks-resolve-plugin
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]

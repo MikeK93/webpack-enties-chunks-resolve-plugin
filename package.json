@@ -14,5 +14,9 @@
     "build": "webpack --progress --config webpack.config.js"
   },
   "author": "Mykhailo Kozlov <mestremi6a@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MikeK93/webpack-enties-chunks-resolve-plugin"
+  }
 }
